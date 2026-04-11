@@ -1,140 +1,164 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PetHaven - Amor e Cuidado para Seu Amigo Peludo</title>
+    <meta name="description" content="PetHaven - Amor e cuidado premium para o seu melhor amigo. Oferecemos hospedagem, creche, treinamento e produtos de alta qualidade.">
+    <title>PetHaven | Cuidado Premium para Seu Pet</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Lucide Icons SDK -->
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
-    <div class="app w-100 h-100">
-        <div class="app-header w-100">
+    <div class="app">
+        <!-- Header -->
+        <header class="app-header">
             <div class="container-img">
-                <img src="assets/img/logo.png" alt="PETHAVEN" class="logo">
+                <img src="assets/img/logo.png" alt="PetHaven Logo" class="logo">
             </div>
-            <ul class="menu h-100" id="menu">
-                <li class="menu-item"><a href="">Início</a></li>
-                <li class="menu-item"><a href="">Serviços</a></li>
-                <li class="menu-item"><a href="">Sobre nós</a></li>
-                <li class="menu-item"><a href="">Contato</a></li>
-            </ul>
+            
+            <nav>
+                <ul class="menu" id="menu">
+                    <li class="menu-item"><a href="#inicio">Início</a></li>
+                    <li class="menu-item"><a href="#servicos">Serviços</a></li>
+                    <li class="menu-item"><a href="#sobre">Sobre nós</a></li>
+                    <li class="menu-item"><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+
             <div class="button-menu">
-                <button class="container-menu-bar" id = "menu-button">
+                <button class="container-menu-bar" id="menu-button" aria-label="Abrir menu">
                     <div class="bar"></div>
                     <div class="bar"></div>
                     <div class="bar"></div>
                 </button>
             </div>
-        </div>
-        <div class="app-body w-100">
-            <div class="container-banner">
+        </header>
+
+        <!-- Main Content -->
+        <main class="app-body">
+            <!-- Hero Section -->
+            <section class="container-banner" id="inicio">
+                <h1 style="font-size: 3.5rem; margin-bottom: 20px; line-height: 1.2;">Amor e Cuidado <br><span style="color: var(--secondary);">Incondicional</span></h1>
+                <p style="font-size: 1.25rem; margin-bottom: 40px; max-width: 600px;">Transformamos a vida do seu pet com experiências únicas de cuidado, diversão e bem-estar.</p>
                 <button class="button-body-contact">
-                    Mime seu pet hoje!
+                    Ver Planos Premium
                 </button>
-            </div>
-            <section class="content-petshop">
-                <h1>Serviços</h1>
+            </section>
+
+            <!-- Services Section -->
+            <section class="content-petshop" id="servicos">
+                <h1>Nossos Serviços</h1>
                 <div class="services">
+                    <!-- Service Card 1 -->
                     <div class="card">
-                        <div class="card-body w-100 image-card" style="background-image: url(assets/img/produtos-premium.jpeg);"></div>
-                        <hr>
-                        <div class="card-footer w-100">
+                        <div class="card-body-wrapper">
+                            <div class="card-body w-100 image-card" style="background-image: url(assets/img/produtos-premium.jpeg);"></div>
+                        </div>
+                        <div class="card-footer">
                             <h2>Pet Shop Premium</h2>
-                            <label>
-                                Na nossa loja, você encontra produtos premium de qualidade.
-                                <a href="">Saiba mais</a>
-                            </label>
+                            <label>Os melhores produtos e acessórios curados para a saúde e alegria do seu pet.</label>
+                            <a href="#">Saiba mais <i data-lucide="arrow-right" size="18"></i></a>
                         </div>
                     </div>
 
+                    <!-- Service Card 2 -->
                     <div class="card">
-                        <div class="card-body w-100 image-card" style="background-image: url(assets/img/hospedagem-petshop.jpg);"></div>
-                        <hr>
-                        <div class="card-footer w-100">
-                            <h2>Hospedagem Confortável</h2>
-                            <label>
-                                Ofereça um lar temporário amoroso para o seu pet.
-                                <a href="">Saiba mais</a>
-                            </label>
+                        <div class="card-body-wrapper">
+                            <div class="card-body w-100 image-card" style="background-image: url(assets/img/hospedagem-petshop.jpg);"></div>
+                        </div>
+                        <div class="card-footer">
+                            <h2>Hospedagem</h2>
+                            <label>Um lar temporário cheio de carinho, segurança e monitoramento 24h.</label>
+                            <a href="#">Saiba mais <i data-lucide="arrow-right" size="18"></i></a>
                         </div>
                     </div>
 
+                    <!-- Service Card 3 -->
                     <div class="card">
-                        <div class="card-body w-100 image-card" style="background-image: url(assets/img/creche-petshop.png);"></div>
-                        <hr>
-                        <div class="card-footer w-100">
-                            <h2>Creche divertida</h2>
-                            <label>
-                                Socialização divertida com outros cães.
-                                <a href="">Saiba mais</a>
-                            </label>
+                        <div class="card-body-wrapper">
+                            <div class="card-body w-100 image-card" style="background-image: url(assets/img/creche-petshop.png);"></div>
+                        </div>
+                        <div class="card-footer">
+                            <h2>Creche Divertida</h2>
+                            <label>Socialização em ambiente controlado com atividades educativas e recreativas.</label>
+                            <a href="#">Saiba mais <i data-lucide="arrow-right" size="18"></i></a>
                         </div>
                     </div>
 
+                    <!-- Service Card 4 -->
                     <div class="card">
-                        <div class="card-body w-100 image-card" style="background-image: url(assets/img/treinamentopositivo.png);"></div>
-                        <hr>
-                        <div class="card-footer w-100">
-                            <h2>Treinamento Positivo</h2>
-                            <label>
-                                Construção de uma relação saudável entre você e seu pet com treinamento positivo.
-                                <a href="">Saiba mais</a>
-                            </label>
+                        <div class="card-body-wrapper">
+                            <div class="card-body w-100 image-card" style="background-image: url(assets/img/treinamentopositivo.png);"></div>
+                        </div>
+                        <div class="card-footer">
+                            <h2>Treinamento</h2>
+                            <label>Educação baseada no reforço positivo para fortalecer sua conexão com seu pet.</label>
+                            <a href="#">Saiba mais <i data-lucide="arrow-right" size="18"></i></a>
                         </div>
                     </div>
                 </div>
-                <br>
-                <br>
-                <h1>Sobre nós</h1>
-                <div class="services">
-                    <div class="enterprise-image-container">
 
-                    </div>
+                <!-- About Us -->
+                <h1 id="sobre">Quem Somos</h1>
+                <div class="about-grid">
+                    <div class="enterprise-image-container"></div>
                     <div class="enterprise-info-container">
-                        Na PetHaven, nosso amor incondicional pelos animais de estimação nos inspira a criar um refúgio onde cada rabinho abana de alegria e cada miado encontra carinho. <br><br>
-                        Com uma equipe dedicada e apaixonada, oferecemos um lar temporário caloroso e seguro, uma creche cheia de risos e brincadeiras, serviços de grooming que são verdadeiros mimos de beleza, treinamento que une laços e uma loja que transborda qualidade para nossos amigos peludos. Nossa missão é elevar o bem-estar dos animais, proporcionando experiências excepcionais e momentos inesquecíveis para cada um deles.  <br><br>
-                        Na PetHaven, eles não são apenas animais de estimação; são parte das nossas vidas e do nosso amor pelo mundo animal. 🐾❤️
+                        <p>Na <strong>PetHaven</strong>, nosso amor incondicional pelos animais nos inspira a criar um refúgio onde cada rabinho abana de alegria e cada miado encontra carinho.</p>
+                        <br>
+                        <p>Com uma equipe dedicada e apaixonada, oferecemos um lar temporário caloroso, uma creche cheia de vida e serviços de grooming que são verdadeiros mimos de beleza. Nossa missão é elevar o bem-estar animal, proporcionando experiências excepcionais.</p>
+                        <br>
+                        <p>Para nós, eles não são apenas animais de estimação; são parte da nossa família. 🐾❤️</p>
                     </div>
                 </div>
             </section>
-            <a href="" target="_blank">
-                <div class="whatsapp-button">
-                
-                </div>
+
+            <!-- Floating Action -->
+            <a href="https://wa.me/552122222222" target="_blank" class="whatsapp-button" aria-label="Falar no WhatsApp">
+                <i data-lucide="message-circle" color="white" size="32"></i>
             </a>
-        </div>
-        <div class="app-footer w-100">
-            <div class="w-100" style="display: flex;align-items: center;flex-wrap: wrap;height: auto;">
-                <div class="logo-petshop" style="width: 300px;height: 200px;text-align: end;">
-                    <img src="assets/img/logo.png" alt="" height="100%">
+        </main>
+
+        <!-- Footer -->
+        <footer class="app-footer" id="contato">
+            <div class="footer-content">
+                <div class="footer-logo-side">
+                    <img src="assets/img/logo.png" alt="PetHaven" class="logo">
+                    <p style="color: #A0AEC0; font-size: 0.9rem;">Elevando o padrão de cuidado animal desde 2024. Seu pet merece o melhor.</p>
                 </div>
-                <div class="information-footer">
-                    <div class="info-footer">
-                        <h2 class="title-info-footer">Menu</h2>
-                        <ul class="menu-footer">
-                            <li><a href="">Início</a></li>
-                            <li><a href="">Serviços</a></li>
-                            <li><a href="">Sobre nós</a></li>
-                            <li><a href="">Contato</a></li>
-                        </ul>
-                    </div>
-                    <div class="info-footer">
-                        <h2 class="title-info-footer">Contato</h2>
-                        <ul class="menu-footer">
-                            <li><a href=”tel:+5502122222222″>+55 21 – 2222-2222</a></li>
-                            <li><a href="mailto:email@gmail.com?subject=Hello">email@gmail.com</a></li>
-                        </ul>
-                    </div>
-                    <div class="info-footer">
-                        <h2 class="title-info-footer">Localização</h2>
-                        <ul class="menu-footer">
-                            <li>Cidade Nexus, Planeta Technova</li>
-                        </ul>
-                    </div>
+                
+                <div class="info-footer">
+                    <h2 class="title-info-footer">Explore</h2>
+                    <ul class="menu-footer">
+                        <li><a href="#inicio">Início</a></li>
+                        <li><a href="#servicos">Serviços</a></li>
+                        <li><a href="#sobre">Sobre nós</a></li>
+                    </ul>
+                </div>
+
+                <div class="info-footer">
+                    <h2 class="title-info-footer">Contato</h2>
+                    <ul class="menu-footer">
+                        <li><a href="tel:+552122222222">+55 21 2222-2222</a></li>
+                        <li><a href="mailto:contato@pethaven.com">contato@pethaven.com</a></li>
+                    </ul>
+                </div>
+
+                <div class="info-footer">
+                    <h2 class="title-info-footer">Venha nos Visitar</h2>
+                    <p style="color: #CBD5E0;">Cidade Nexus, Planeta Technova<br>Bairro das Patas, 123</p>
                 </div>
             </div>
-        </div>
+            <div style="text-align: center; margin-top: 60px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.1); color: #718096; font-size: 0.85rem;">
+                &copy; 2024 PetHaven. Todos os direitos reservados.
+            </div>
+        </footer>
     </div>
+    
     <script src="assets/js/script.js"></script>
+    <script>
+        // Inicializa ícones Lucide
+        lucide.createIcons();
+    </script>
 </body>
-</html>
+</html>

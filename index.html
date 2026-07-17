@@ -3,162 +3,462 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="PetHaven - Amor e cuidado premium para o seu melhor amigo. Oferecemos hospedagem, creche, treinamento e produtos de alta qualidade.">
-    <title>PetHaven | Cuidado Premium para Seu Pet</title>
+    <meta name="description" content="PetHaven - Amor e cuidado premium para o seu melhor amigo. Oferecemos hospedagem de luxo, creche ativa, treinamento positivo e produtos curados.">
+    <title>PetHaven | Experiência Premium para Seu Pet</title>
+    
+    <!-- Design Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Main Style Sheet -->
     <link rel="stylesheet" href="assets/css/style.css">
+    
     <!-- Lucide Icons SDK -->
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
-    <div class="app">
-        <!-- Header -->
-        <header class="app-header">
-            <div class="container-img">
-                <img src="assets/img/logo.png" alt="PetHaven Logo" class="logo">
-            </div>
-            
-            <nav>
-                <ul class="menu" id="menu">
-                    <li class="menu-item"><a href="#inicio">Início</a></li>
-                    <li class="menu-item"><a href="#servicos">Serviços</a></li>
-                    <li class="menu-item"><a href="#sobre">Sobre nós</a></li>
-                    <li class="menu-item"><a href="#contato">Contato</a></li>
-                </ul>
-            </nav>
+    <!-- Skip Link for Keyboard Navigation (Acessibilidade) -->
+    <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
 
-            <div class="button-menu">
-                <button class="container-menu-bar" id="menu-button" aria-label="Abrir menu">
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                </button>
+    <div class="app">
+        <!-- Header / Navigation -->
+        <header class="app-header" id="app-header">
+            <div class="header-container">
+                <a href="#inicio" class="logo-link" aria-label="PetHaven Home">
+                    <img src="assets/img/logo.png" alt="PetHaven Logo" class="logo">
+                </a>
+                
+                <nav class="nav-desktop" aria-label="Navegação Principal">
+                    <ul class="menu" id="menu">
+                        <li class="menu-item"><a href="#inicio">Início</a></li>
+                        <li class="menu-item"><a href="#servicos">Serviços</a></li>
+                        <li class="menu-item"><a href="#diferenciais">Diferenciais</a></li>
+                        <li class="menu-item"><a href="#depoimentos">Depoimentos</a></li>
+                        <li class="menu-item"><a href="#faq">Dúvidas</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header-actions">
+                    <a href="#contato-cta" class="button button-header">Fale Conosco</a>
+                    <button class="menu-toggle-button" id="menu-button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu de navegação">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </button>
+                </div>
             </div>
         </header>
 
         <!-- Main Content -->
-        <main class="app-body">
+        <main class="app-body" id="main-content">
             <!-- Hero Section -->
-            <section class="container-banner" id="inicio">
-                <h1 style="font-size: 3.5rem; margin-bottom: 20px; line-height: 1.2;">Amor e Cuidado <br><span style="color: var(--secondary);">Incondicional</span></h1>
-                <p style="font-size: 1.25rem; margin-bottom: 40px; max-width: 600px;">Transformamos a vida do seu pet com experiências únicas de cuidado, diversão e bem-estar.</p>
-                <button class="button-body-contact">
-                    Ver Planos Premium
-                </button>
-            </section>
-
-            <!-- Services Section -->
-            <section class="content-petshop" id="servicos">
-                <h1>Nossos Serviços</h1>
-                <div class="services">
-                    <!-- Service Card 1 -->
-                    <div class="card">
-                        <div class="card-body-wrapper">
-                            <div class="card-body w-100 image-card" style="background-image: url(assets/img/produtos-premium.jpeg);"></div>
+            <section class="section-hero" id="inicio">
+                <div class="container hero-grid">
+                    <div class="hero-content reveal">
+                        <div class="badge-hero">
+                            <i data-lucide="sparkles" size="14" aria-hidden="true"></i>
+                            <span>O Padrão Ouro de Cuidado Animal</span>
                         </div>
-                        <div class="card-footer">
-                            <h2>Pet Shop Premium</h2>
-                            <label>Os melhores produtos e acessórios curados para a saúde e alegria do seu pet.</label>
-                            <a href="#">Saiba mais <i data-lucide="arrow-right" size="18"></i></a>
+                        <h1>Cuidado de luxo e bem-estar para o seu <span class="gradient-text">melhor amigo</span></h1>
+                        <p>Muito mais que um petshop. Um refúgio premium projetado para proporcionar felicidade, socialização ativa e segurança máxima para quem você mais ama.</p>
+                        
+                        <div class="hero-actions">
+                            <a href="#servicos" class="button button-primary">Conhecer Serviços</a>
+                            <a href="#contato-cta" class="button button-secondary">Agendar Visita</a>
                         </div>
                     </div>
-
-                    <!-- Service Card 2 -->
-                    <div class="card">
-                        <div class="card-body-wrapper">
-                            <div class="card-body w-100 image-card" style="background-image: url(assets/img/hospedagem-petshop.jpg);"></div>
+                    
+                    <!-- Advanced Interactive UI Element Mockup (Demonstração técnica UX/UI) -->
+                    <div class="hero-visual reveal">
+                        <div class="hero-visual-card main-visual" style="background-image: url('assets/img/fora-loja.jpg');" aria-label="Área externa do PetHaven">
+                            <!-- Overlay Glass UI cards -->
+                            <div class="glass-ui-card card-top">
+                                <div class="pulse-dot"></div>
+                                <div class="glass-ui-info">
+                                    <span class="glass-ui-title">Status: Divertindo-se</span>
+                                    <span class="glass-ui-subtitle">Câmera 02 - Jardim Leste</span>
+                                </div>
+                            </div>
+                            
+                            <div class="glass-ui-card card-bottom">
+                                <div class="rating-stars">
+                                    <i data-lucide="star" class="fill-star" size="14"></i>
+                                    <i data-lucide="star" class="fill-star" size="14"></i>
+                                    <i data-lucide="star" class="fill-star" size="14"></i>
+                                    <i data-lucide="star" class="fill-star" size="14"></i>
+                                    <i data-lucide="star" class="fill-star" size="14"></i>
+                                </div>
+                                <div class="glass-ui-info">
+                                    <span class="glass-ui-title">100% de Recomendação</span>
+                                    <span class="glass-ui-subtitle">Por mais de 1.200 famílias</span>
+                                </div>
+                            </div>
                         </div>
-                        <div class="card-footer">
-                            <h2>Hospedagem</h2>
-                            <label>Um lar temporário cheio de carinho, segurança e monitoramento 24h.</label>
-                            <a href="#">Saiba mais <i data-lucide="arrow-right" size="18"></i></a>
-                        </div>
-                    </div>
-
-                    <!-- Service Card 3 -->
-                    <div class="card">
-                        <div class="card-body-wrapper">
-                            <div class="card-body w-100 image-card" style="background-image: url(assets/img/creche-petshop.png);"></div>
-                        </div>
-                        <div class="card-footer">
-                            <h2>Creche Divertida</h2>
-                            <label>Socialização em ambiente controlado com atividades educativas e recreativas.</label>
-                            <a href="#">Saiba mais <i data-lucide="arrow-right" size="18"></i></a>
-                        </div>
-                    </div>
-
-                    <!-- Service Card 4 -->
-                    <div class="card">
-                        <div class="card-body-wrapper">
-                            <div class="card-body w-100 image-card" style="background-image: url(assets/img/treinamentopositivo.png);"></div>
-                        </div>
-                        <div class="card-footer">
-                            <h2>Treinamento</h2>
-                            <label>Educação baseada no reforço positivo para fortalecer sua conexão com seu pet.</label>
-                            <a href="#">Saiba mais <i data-lucide="arrow-right" size="18"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- About Us -->
-                <h1 id="sobre">Quem Somos</h1>
-                <div class="about-grid">
-                    <div class="enterprise-image-container"></div>
-                    <div class="enterprise-info-container">
-                        <p>Na <strong>PetHaven</strong>, nosso amor incondicional pelos animais nos inspira a criar um refúgio onde cada rabinho abana de alegria e cada miado encontra carinho.</p>
-                        <br>
-                        <p>Com uma equipe dedicada e apaixonada, oferecemos um lar temporário caloroso, uma creche cheia de vida e serviços de grooming que são verdadeiros mimos de beleza. Nossa missão é elevar o bem-estar animal, proporcionando experiências excepcionais.</p>
-                        <br>
-                        <p>Para nós, eles não são apenas animais de estimação; são parte da nossa família. 🐾❤️</p>
                     </div>
                 </div>
             </section>
 
-            <!-- Floating Action -->
-            <a href="https://wa.me/552122222222" target="_blank" class="whatsapp-button" aria-label="Falar no WhatsApp">
-                <i data-lucide="message-circle" color="white" size="32"></i>
-            </a>
+            <!-- Trust Anchor (Cinturão de Confiança) -->
+            <section class="section-trust">
+                <div class="container">
+                    <div class="trust-wrapper">
+                        <div class="trust-metric">
+                            <span class="metric-number">15k+</span>
+                            <span class="metric-label">Pets Felizes Atendidos</span>
+                        </div>
+                        <div class="trust-divider"></div>
+                        <div class="trust-metric">
+                            <span class="metric-number">24/7</span>
+                            <span class="metric-label">Monitoramento em Tempo Real</span>
+                        </div>
+                        <div class="trust-divider"></div>
+                        <div class="trust-metric">
+                            <span class="metric-number">4.9★</span>
+                            <span class="metric-label">Avaliação no Google</span>
+                        </div>
+                        <div class="trust-divider"></div>
+                        <div class="trust-metric">
+                            <span class="metric-number">100%</span>
+                            <span class="metric-label">Equipe Certificada</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Services Section (Bento Grid) -->
+            <section class="section-services" id="servicos">
+                <div class="container">
+                    <div class="section-header reveal">
+                        <span class="section-tagline">Nossas Soluções</span>
+                        <h2>Serviços pensados para cada detalhe da vida do pet</h2>
+                        <p class="section-desc">Estruturas modernas e metodologias avançadas de reforço positivo para garantir a saúde e felicidade do seu pet.</p>
+                    </div>
+
+                    <!-- 12-Column CSS Bento Grid -->
+                    <div class="bento-grid">
+                        
+                        <!-- Bento Card 1 (Hospedagem - Destaque 7 Colunas) -->
+                        <article class="bento-card col-7 reveal">
+                            <div class="bento-card-bg" style="background-image: url('assets/img/hospedagem-petshop.jpg');" aria-label="Espaço de hospedagem confortável"></div>
+                            <div class="bento-card-content">
+                                <span class="bento-badge">Mais Procurado</span>
+                                <h3 class="bento-card-title">Hospedagem Premium</h3>
+                                <p class="bento-card-desc">Suítes individuais monitoradas por câmera 24h, rotina personalizada de atividades e carinho ilimitado.</p>
+                                <a href="#contato-cta" class="bento-link">Reservar Suíte <i data-lucide="arrow-right" size="16" aria-hidden="true"></i></a>
+                            </div>
+                        </article>
+
+                        <!-- Bento Card 2 (Creche Divertida - 5 Colunas) -->
+                        <article class="bento-card col-5 reveal">
+                            <div class="bento-card-bg" style="background-image: url('assets/img/creche-petshop.png');" aria-label="Cães brincando socializando"></div>
+                            <div class="bento-card-content">
+                                <span class="bento-badge secondary">Socialização</span>
+                                <h3 class="bento-card-title">Creche Ativa</h3>
+                                <p class="bento-card-desc">Gasto de energia física e mental sob supervisão de especialistas em comportamento animal.</p>
+                                <a href="#contato-cta" class="bento-link">Agendar Avaliação <i data-lucide="arrow-right" size="16" aria-hidden="true"></i></a>
+                            </div>
+                        </article>
+
+                        <!-- Bento Card 3 (Pet Shop Premium - 5 Colunas) -->
+                        <article class="bento-card col-5 reveal">
+                            <div class="bento-card-bg" style="background-image: url('assets/img/produtos-premium.jpeg');" aria-label="Rações e acessórios premium"></div>
+                            <div class="bento-card-content">
+                                <span class="bento-badge outline">Nutrição & Saúde</span>
+                                <h3 class="bento-card-title">Boutique Curada</h3>
+                                <p class="bento-card-desc">Alimentação super premium, brinquedos educativos e acessórios selecionados para a máxima qualidade de vida.</p>
+                                <a href="#contato-cta" class="bento-link">Ver Produtos <i data-lucide="arrow-right" size="16" aria-hidden="true"></i></a>
+                            </div>
+                        </article>
+
+                        <!-- Bento Card 4 (Treinamento Positivo - 7 Colunas) -->
+                        <article class="bento-card col-7 reveal">
+                            <div class="bento-card-bg" style="background-image: url('assets/img/treinamentopositivo.png');" aria-label="Adestrador treinando um cão"></div>
+                            <div class="bento-card-content">
+                                <span class="bento-badge success">Educação</span>
+                                <h3 class="bento-card-title">Treinamento Positivo</h3>
+                                <p class="bento-card-desc">Educação baseada no afeto e na recompensa. Fortaleça o vínculo e a harmonia entre você e seu companheiro.</p>
+                                <a href="#contato-cta" class="bento-link">Iniciar Treino <i data-lucide="arrow-right" size="16" aria-hidden="true"></i></a>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- Why Choose Us / Diferenciais (Agitação da Dor + Bento de Badges) -->
+            <section class="section-diferenciais" id="diferenciais">
+                <div class="container differentials-grid">
+                    <div class="differentials-info reveal">
+                        <span class="section-tagline">Diferenciais Exclusivos</span>
+                        <h2>A tranquilidade de saber que seu pet está em boas mãos</h2>
+                        <p>Entendemos que o seu companheiro é parte essencial da sua família. Por isso, criamos uma infraestrutura sem paralelos que elimina qualquer preocupação.</p>
+                        
+                        <div class="differentials-quote">
+                            <p>"A PetHaven foi pensada para entregar o nível de excelência que nós gostaríamos de ver nos locais onde deixamos nossos próprios pets."</p>
+                            <span class="quote-author">— Dr. Gabriel Rodrigues, Fundador</span>
+                        </div>
+                    </div>
+                    
+                    <div class="differentials-cards">
+                        <!-- Card 1 -->
+                        <div class="differential-card reveal">
+                            <div class="diff-icon-wrapper">
+                                <i data-lucide="video" size="24" aria-hidden="true"></i>
+                            </div>
+                            <h3>Câmeras Individuais</h3>
+                            <p>Acesse o streaming de vídeo da hospedagem diretamente pelo seu celular a qualquer hora do dia ou da noite.</p>
+                        </div>
+                        
+                        <!-- Card 2 -->
+                        <div class="differential-card reveal">
+                            <div class="diff-icon-wrapper">
+                                <i data-lucide="award" size="24" aria-hidden="true"></i>
+                            </div>
+                            <h3>Monitores Certificados</h3>
+                            <p>Equipe multidisciplinar formada por adestradores e cuidadores com certificações reconhecidas nacionalmente.</p>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="differential-card reveal">
+                            <div class="diff-icon-wrapper">
+                                <i data-lucide="trees" size="24" aria-hidden="true"></i>
+                            </div>
+                            <h3>2.000m² de Área Verde</h3>
+                            <p>Gramado amplo, piscinas adaptadas e playgrounds para o livre gasto de energia em contato com a natureza.</p>
+                        </div>
+
+                        <!-- Card 4 -->
+                        <div class="differential-card reveal">
+                            <div class="diff-icon-wrapper">
+                                <i data-lucide="heart-handshake" size="24" aria-hidden="true"></i>
+                            </div>
+                            <h3>Suporte Veterinário</h3>
+                            <p>Médicos veterinários de sobreaviso constante e protocolo integrado para rápida ação se necessário.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Testimonials (Prova Qualitativa) -->
+            <section class="section-testimonials" id="depoimentos">
+                <div class="container">
+                    <div class="section-header reveal">
+                        <span class="section-tagline">Depoimentos Reais</span>
+                        <h2>O que dizem os pais e mães de pets</h2>
+                        <p class="section-desc">Nada nos orgulha mais do que ver a felicidade estampada nos depoimentos de quem confia no nosso trabalho.</p>
+                    </div>
+
+                    <div class="testimonials-grid">
+                        
+                        <!-- Testimonial 1 -->
+                        <article class="testimonial-card reveal">
+                            <div class="rating-stars">
+                                <i data-lucide="star" class="fill-star" size="16" aria-hidden="true"></i>
+                                <i data-lucide="star" class="fill-star" size="16" aria-hidden="true"></i>
+                                <i data-lucide="star" class="fill-star" size="16" aria-hidden="true"></i>
+                                <i data-lucide="star" class="fill-star" size="16" aria-hidden="true"></i>
+                                <i data-lucide="star" class="fill-star" size="16" aria-hidden="true"></i>
+                            </div>
+                            <blockquote class="testimonial-text">
+                                "O Thor ficava muito ansioso quando eu viajava. Desde que conhecemos a hospedagem do PetHaven, ele vai abanando o rabo e eu viajo tranquila assistindo ele brincar pela câmera."
+                            </blockquote>
+                            <div class="testimonial-author">
+                                <div class="author-avatar" style="background-image: url('assets/img/hospedagem-petshop.jpg');" aria-hidden="true"></div>
+                                <div class="author-info">
+                                    <cite class="author-name">Mariana Silva</cite>
+                                    <span class="author-pet">Mãe do Thor (Golden Retriever)</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Testimonial 2 -->
+                        <article class="testimonial-card reveal">
+                            <div class="rating-stars">
+                                <i data-lucide="star" class="fill-star" size="16" aria-hidden="true"></i>
+                                <i data-lucide="star" class="fill-star" size="16" aria-hidden="true"></i>
+                                <i data-lucide="star" class="fill-star" size="16" aria-hidden="true"></i>
+                                <i data-lucide="star" class="fill-star" size="16" aria-hidden="true"></i>
+                                <i data-lucide="star" class="fill-star" size="16" aria-hidden="true"></i>
+                            </div>
+                            <blockquote class="testimonial-text">
+                                "A creche mudou o comportamento da Luna em casa. Ela era agitada e destruía móveis. Agora ela gasta energia com segurança e aprende a se socializar de verdade."
+                            </blockquote>
+                            <div class="testimonial-author">
+                                <div class="author-avatar" style="background-image: url('assets/img/creche-petshop.png');" aria-hidden="true"></div>
+                                <div class="author-info">
+                                    <cite class="author-name">Ricardo Santos</cite>
+                                    <span class="author-pet">Pai da Luna (Border Collie)</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Testimonial 3 -->
+                        <article class="testimonial-card reveal">
+                            <div class="rating-stars">
+                                <i data-lucide="star" class="fill-star" size="16" aria-hidden="true"></i>
+                                <i data-lucide="star" class="fill-star" size="16" aria-hidden="true"></i>
+                                <i data-lucide="star" class="fill-star" size="16" aria-hidden="true"></i>
+                                <i data-lucide="star" class="fill-star" size="16" aria-hidden="true"></i>
+                                <i data-lucide="star" class="fill-star" size="16" aria-hidden="true"></i>
+                            </div>
+                            <blockquote class="testimonial-text">
+                                "O treinamento positivo fez milagres no nosso passeio diário. O adestrador do PetHaven ensina com tanto amor e paciência que a evolução aconteceu em poucas semanas."
+                            </blockquote>
+                            <div class="testimonial-author">
+                                <div class="author-avatar" style="background-image: url('assets/img/treinamentopositivo.png');" aria-hidden="true"></div>
+                                <div class="author-info">
+                                    <cite class="author-name">Cláudia Costa</cite>
+                                    <span class="author-pet">Mãe do Pipoca (Vira-lata)</span>
+                                </div>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- FAQ Section (Detecção de Dúvidas / Ansiedade - Modelo LIFT) -->
+            <section class="section-faq" id="faq">
+                <div class="container faq-container">
+                    <div class="section-header reveal">
+                        <span class="section-tagline">Perguntas Frequentes</span>
+                        <h2>Tire todas as suas dúvidas</h2>
+                        <p class="section-desc">Queremos que você se sinta 100% confortável antes de nos fazer uma visita. Veja as respostas para as perguntas mais comuns.</p>
+                    </div>
+
+                    <div class="faq-list reveal">
+                        <details class="faq-item">
+                            <summary class="faq-question">
+                                <span>Como funciona o monitoramento por câmeras na hospedagem?</span>
+                                <i data-lucide="chevron-down" class="faq-icon" size="18" aria-hidden="true"></i>
+                            </summary>
+                            <div class="faq-answer">
+                                <p>Cada suíte de hospedagem possui uma câmera dedicada integrada a um aplicativo privado. Ao hospedar seu pet, você receberá um login temporário e seguro para assistir ao streaming de vídeo em tempo real no seu smartphone 24h por dia.</p>
+                            </div>
+                        </details>
+
+                        <details class="faq-item">
+                            <summary class="faq-question">
+                                <span>Quais são as vacinas e exames obrigatórios para a creche?</span>
+                                <i data-lucide="chevron-down" class="faq-icon" size="18" aria-hidden="true"></i>
+                            </summary>
+                            <div class="faq-answer">
+                                <p>Para a segurança de todos, exigimos a vacinação completa atualizada: V10 ou V8, Raiva, Gripe e Giárdia. Além disso, os pets precisam de controle periódico de ectoparasitas (pulgas/carrapatos) e vermifugação. Realizamos uma avaliação comportamental obrigatória antes do primeiro dia.</p>
+                            </div>
+                        </details>
+
+                        <details class="faq-item">
+                            <summary class="faq-question">
+                                <span>Qual a proporção de monitores por cão na área recreativa?</span>
+                                <i data-lucide="chevron-down" class="faq-icon" size="18" aria-hidden="true"></i>
+                            </summary>
+                            <div class="faq-answer">
+                                <p>Mantemos uma proporção rigorosa de no máximo 8 cães por monitor qualificado nas áreas de lazer ativo. Essa proporção garante que todos recebam atenção direta, supervisão total de brincadeiras e segurança máxima.</p>
+                            </div>
+                        </details>
+
+                        <details class="faq-item">
+                            <summary class="faq-question">
+                                <span>Se meu cão precisar de medicação, vocês administram?</span>
+                                <i data-lucide="chevron-down" class="faq-icon" size="18" aria-hidden="true"></i>
+                            </summary>
+                            <div class="faq-answer">
+                                <p>Sim. Nossa equipe é treinada para ministrar medicamentos orais ou tópicos de forma tranquila e pontual, seguindo estritamente a receita e orientações deixadas pelo tutor e médico veterinário responsável.</p>
+                            </div>
+                        </details>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Closing CTA Section (Mitigação de risco) -->
+            <section class="section-cta" id="contato-cta">
+                <div class="cta-background"></div>
+                <div class="container cta-container reveal">
+                    <h2>Dê a experiência premium que seu pet merece</h2>
+                    <p>Agende uma visita guiada para conhecer nossas instalações de perto. O primeiro dia de avaliação comportamental na creche é totalmente gratuito.</p>
+                    
+                    <div class="cta-actions">
+                        <a href="https://wa.me/552122222222" target="_blank" rel="noopener noreferrer" class="button button-cta-primary">
+                            <i data-lucide="message-square" size="18" aria-hidden="true"></i>
+                            <span>Conversar no WhatsApp</span>
+                        </a>
+                        <a href="tel:+552122222222" class="button button-cta-secondary">Ligar para Nós</a>
+                    </div>
+                    
+                    <span class="cta-guarantee">
+                        <i data-lucide="shield-check" size="16" aria-hidden="true"></i>
+                        Garantia PetHaven: Adaptação monitorada e cuidado 100% humanizado
+                    </span>
+                </div>
+            </section>
         </main>
 
+        <!-- Floating WhatsApp Widget -->
+        <a href="https://wa.me/552122222222" target="_blank" rel="noopener noreferrer" class="whatsapp-floating" aria-label="Iniciar atendimento rápido no WhatsApp">
+            <span class="whatsapp-tooltip">Fale Conosco</span>
+            <div class="whatsapp-icon-bg">
+                <i data-lucide="message-circle" color="white" size="28" aria-hidden="true"></i>
+            </div>
+        </a>
+
         <!-- Footer -->
-        <footer class="app-footer" id="contato">
-            <div class="footer-content">
-                <div class="footer-logo-side">
-                    <img src="assets/img/logo.png" alt="PetHaven" class="logo">
-                    <p style="color: #A0AEC0; font-size: 0.9rem;">Elevando o padrão de cuidado animal desde 2024. Seu pet merece o melhor.</p>
+        <footer class="app-footer">
+            <div class="container footer-grid">
+                <div class="footer-brand">
+                    <img src="assets/img/logo.png" alt="PetHaven Premium" class="logo footer-logo">
+                    <p>Elevando o padrão de cuidados corporais, bem-estar e diversão animal desde 2024. O refúgio perfeito do seu melhor amigo.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram PetHaven"><i data-lucide="instagram" size="18" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="Facebook PetHaven"><i data-lucide="facebook" size="18" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="YouTube PetHaven"><i data-lucide="youtube" size="18" aria-hidden="true"></i></a>
+                    </div>
                 </div>
                 
-                <div class="info-footer">
-                    <h2 class="title-info-footer">Explore</h2>
-                    <ul class="menu-footer">
+                <div class="footer-links">
+                    <h4 class="footer-title">Links Rápidos</h4>
+                    <ul>
                         <li><a href="#inicio">Início</a></li>
-                        <li><a href="#servicos">Serviços</a></li>
-                        <li><a href="#sobre">Sobre nós</a></li>
+                        <li><a href="#servicos">Nossos Serviços</a></li>
+                        <li><a href="#diferenciais">Diferenciais</a></li>
+                        <li><a href="#depoimentos">Depoimentos</a></li>
+                        <li><a href="#faq">Perguntas Frequentes</a></li>
                     </ul>
                 </div>
 
-                <div class="info-footer">
-                    <h2 class="title-info-footer">Contato</h2>
-                    <ul class="menu-footer">
-                        <li><a href="tel:+552122222222">+55 21 2222-2222</a></li>
-                        <li><a href="mailto:contato@pethaven.com">contato@pethaven.com</a></li>
+                <div class="footer-links">
+                    <h4 class="footer-title">Contato</h4>
+                    <ul>
+                        <li><a href="tel:+552122222222" class="contact-link"><i data-lucide="phone" size="14" aria-hidden="true"></i> +55 21 2222-2222</a></li>
+                        <li><a href="mailto:contato@pethaven.com" class="contact-link"><i data-lucide="mail" size="14" aria-hidden="true"></i> contato@pethaven.com</a></li>
+                        <li><span class="contact-link"><i data-lucide="clock" size="14" aria-hidden="true"></i> Seg - Sáb: 7h às 19h</span></li>
                     </ul>
                 </div>
 
-                <div class="info-footer">
-                    <h2 class="title-info-footer">Venha nos Visitar</h2>
-                    <p style="color: #CBD5E0;">Cidade Nexus, Planeta Technova<br>Bairro das Patas, 123</p>
+                <div class="footer-links">
+                    <h4 class="footer-title">Nosso Refúgio</h4>
+                    <address class="footer-address">
+                        <i data-lucide="map-pin" size="14" aria-hidden="true"></i>
+                        <span>Bairro das Patas, 123<br>Cidade Nexus, Planeta Technova</span>
+                    </address>
                 </div>
             </div>
-            <div style="text-align: center; margin-top: 60px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.1); color: #718096; font-size: 0.85rem;">
-                &copy; 2024 PetHaven. Todos os direitos reservados.
+            
+            <div class="footer-bottom">
+                <div class="container footer-bottom-content">
+                    <p>&copy; 2026 PetHaven Premium. Todos os direitos reservados.</p>
+                    <p class="designer-tag">UX/UI & Dev por Antigravity</p>
+                </div>
             </div>
         </footer>
     </div>
     
+    <!-- Application Scripts -->
     <script src="assets/js/script.js"></script>
     <script>
-        // Inicializa ícones Lucide
+        // Inicializa os ícones Lucide da página
         lucide.createIcons();
     </script>
 </body>
-</html>
+</html>
+
